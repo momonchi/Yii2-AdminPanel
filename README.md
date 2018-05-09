@@ -1,4 +1,4 @@
-# Yii2-user [![Build Status](https://img.shields.io/travis/dektrium/yii2-user/master.svg?style=flat-square)](https://travis-ci.org/dektrium/yii2-user) (https://packagist.org/packages/momonchi/Yii2-AdminPanel) [![Total Downloads](https://img.shields.io/packagist/dt/dektrium/yii2-user.svg?style=flat-square)](https://packagist.org/packages/dektrium/yii2-user)](LICENSE.md)
+# Yii2-AdminPanel (LICENSE.md)
 
 
 Simple way but flexible admin user management.
