@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<meta property="og:url" content="http://quipsphere.com" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Quipsphere" />  
+<meta property="og:description" content="Welcome to QuipSphere: The coolest voice-based entertainment app that allows you to create topics and exchange messages with everyone." />
+<meta property="og:image" content="http://quipsphere.com/images/quiplogo_fbshare.png" />
+<head>
+    <meta charset="UTF-8">
+    <title>QuipSphere</title>
+    <!--<link rel="stylesheet" type="text/css" href="/bootstrap-3.3.2-dist/css/bootstrap.css">-->
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="jquery.syotimer.js"></script>
+    
+    
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="/quip/images/favicon.png"/>
+</head>
+
+<style>
+  ul,li{
+       font-size: 16px;
+      font-family: Avenir-Light;
+      color: #5d5d5d;
+      margin-top: 10px;
+      margin: 10px 0px;
+      padding: 0px 0px 0px 20px;
+  }
+    .marginbtm{
+        margin-bottom: 20px;
+    }
+    .features_img {
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+    }
+    .download_app{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0.5s; 
+      animation-duration: 2s;
+      animation-delay: 0.5s; 
+      
+    }
+    #phone1_holder{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0.5s; 
+      animation-duration: 2s;
+      animation-delay: 0.5s; 
+    }
+    #welcome_to_quipsphere{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 1s; 
+      animation-duration: 2s;
+      animation-delay: 1s; 
+    }
+    #iframe{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 1.5s; 
+       animation-duration: 2s;
+       animation-delay: 1.5s; 
+    }
+    #app_gplay_holder_login{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 2s;
+      animation-duration: 2s;
+      animation-delay: 2s; 
+    }
+    #download_app2{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 2s; 
+      animation-duration: 2s;
+      animation-delay: 2s; 
+    }
+    
+    
+    /* Customization Style of SyoTimer */
+       
+        .timer .table-cell{
+            display: inline-block;
+            margin: 0 5px;
+
+            width: 50px;
+            /*background: url(./images/timer.png) no-repeat 0 0;*/
+        }
+        .timer .table-cell .tab-val{
+            font-size: 35px;
+            color: #80a3ca;
+
+            height: 81px;
+            line-height: 81px;
+
+            margin: 0 0 5px;
+        }
+        .timer .table-cell .tab-metr{
+            font-family: Arial;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        #simple_timer.timer .table-cell.day, 
+        #periodic_timer_days.timer .table-cell.hour{
+            width: 50px;
+            /*background-image: url(./images/timer.png);*/
+        }
+</style>
+
+
+
+<body>
+    <header>
+        <div id="header_container" >
+            <div id="header_holder">
+                <div id="logo">
+                    <div id="logo_holder">
+                        <img src="/images/quips_logo.png" width="100%">
+                    </div>
+                </div>
+                <div id="menu">
+                   <!-- <ul>
+                        <li><a  id="home_menu" href="#features">HOME</a></li>
+                        <li><a  id="about_menu" href="#features">ABOUT US</a></li>
+                        <li><a  id="support_menu" href="#testimonials">SUPPORT</a></li>
+                        <li><a  id="blog_menu" href="#download_app">BLOG</a></li>
+                        <li><a  id="contact_menu" href="#contact">CONTACT</a></li>
+                    </ul>      -->
+                </div>
+        <!--side menu-->
+                <input type="checkbox" id="op" style="display:none;"></input>
+                <div class="lower">
+                  <!--<label for="op"><img src="/images/side-menu-icon.png" width="50px"></label>-->
+                </div>
+                <div class="overlay overlay-hugeinc">
+                    <label for="op"></label>
+                    <nav>
+                        <ul id="ul_menu">
+                          <!--  <li><a class="a" id="home_menu" href="#features">HOME</a></li>
+                            <li><a class="a" id="about_menu" href="#features">ABOUT US</a></li>
+                            <li><a class="a" id="support_menu" href="#testimonials">SUPPORT</a></li>
+                            <li><a class="a" id="blog_menu" href="#download_app">BLOG</a></li>
+                            <li><a class="a" id="contact_menu" href="#contact">CONTACT</a></li> -->
+                            
+                            <!--<li><a class="a" id="home_menu" href="#features"><label for="op">HOME</label></a></li>
+                            <li><a class="a" id="about_menu" href="#features"><label for="op">ABOUT US</label></a></li>
+                            <li><a class="a" id="support_menu" href="#testimonials"><label for="op">SUPPORT</label></a></li>
+                            <li><a class="a" id="blog_menu" href="#download_app"><label for="op">BLOG</label></a></li>
+                            <li><a class="a" id="contact_menu" href="#contact"><label for="op">CONTACS</label></a></li>-->   
+                            <li>
+                             <a href="https://play.google.com/store/apps/details?id=com.quipsphere.mobile" target="_new" >
+                                        <img src="/images/googleplay.png" style="width:75%;">
+                                    </a>     
+                             </li>
+                             <li>
+                             <a href="https://itunes.apple.com/ph/app/quipsphere/id1091149638?mt=8" target="_new" >
+                                        <img src="/images/appstore.png" style="width:75%;"> 
+                                    </a>    
+                             </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+    </header>     
+    
+    <!--Login-->
+        
+        <div id="login_container" style="font-family:Avenir, Arial">
+            <div id="login" style="width:70%;margin:0 auto;">
+                <div >
+                <h2>Terms os Use</h2>
+
+<p>These Terms of Use are effective on January 01, 2016. </p>
+<p>By accessing or using the QuipSphere website, the QuipSphere service, or any applications (including mobile applications) made available by QuipSphere (collectively, the "Service"), however accessed, you agree to be bound by these terms of use ("Terms of Use"). The Service is owned or controlled by QuipSphere. These Terms of Use affect your legal rights and obligations. If you do not agree to be bound by all of these Terms of Use, do not access or use the Service.</p>
+<p>There may be times when we offer a special feature that has its own terms and conditions that apply in addition to these Terms of Use. In those cases, the terms specific to the special feature control to the extent there is a conflict with these Terms of Use.</p>
+<p><b>1. Basic Terms</b></p>
+<p>You agree that,</p>
+<p>
+<ul class="termsul">
+<li>You will not solicit, collect or use the login credentials of other QuipSphere users.</li> 
+<li>You are responsible for any activity that occurs through your account and you agree you will not sell, transfer, license or assign your account, followers, username, or any account rights. With the exception of people or businesses that are expressly authorized to create accounts on behalf of their employers or clients, QuipSphere prohibits the creation of and you agree that you will not create an account for anyone other than yourself. You also represent that all information you provide or provided to QuipSphere upon registration and at all other times will be true, accurate, current and complete and you agree to update your information as necessary to maintain its truth and accuracy.</li> 
+<li>You may not post violent, nude, partially nude, discriminatory, unlawful, infringing, hateful, pornographic or sexually suggestive photos or other content via the Service.</li> </li>
+<li>You are responsible for keeping your password secret and secure.</li>
+<li>You must not defame, stalk, bully, abuse, harass, threaten, impersonate or intimidate people or entities and you must not post private or confidential information via the Service, including, without limitation, your or any other person's credit card information, social security or alternate national identity numbers, non-public phone numbers or non-public email addresses.</li>
+<li>You may not use the Service for any illegal or unauthorized purpose. You agree to comply with all laws, rules and regulations (for example, federal, state, local and provincial) applicable to your use of the Service and your Content (defined below), including but not limited to, copyright laws.</li>
+<li>You are solely responsible for your conduct and any data, text, files, information, usernames, images, graphics, photos, profiles, audio and video clips, sounds, musical works, works of authorship, applications, links and other content or materials (collectively, "Content") that you submit, post or display on or via the Service.</li>
+<li>You must not change, modify, adapt or alter the Service or change, modify or alter another website so as to falsely imply that it is associated with the Service or QuipSphere.</li>
+<li>You must not create or submit unwanted email, comments, likes or other forms of commercial or harassing communications (a/k/a "spam") to any QuipSphere users.</li>
+<li>You must not use domain names or web URLs in your username without prior written consent from QuipSphere.</li>
+<li>You must not interfere or disrupt the Service or servers or networks connected to the Service, including by transmitting any worms, viruses, spyware, malware or any other code of a destructive or disruptive nature. You may not inject content or code or otherwise alter or interfere with the way any QuipSphere page is rendered or displayed in a user's browser or device.</li>
+<li>You must not create accounts with the Service through unauthorized means, including but not limited to, by using an automated device, script, bot, spider, crawler or scraper.</li>
+<li>You must not attempt to restrict another user from using or enjoying the Service and you must not encourage or facilitate violations of these Terms of Use or any other QuipSphere terms.</li>
+<li>Violation of these Terms of Use may, in QuipSphere's sole discretion, result in termination of your QuipSphere account. You understand and agree that QuipSphere cannot and will not be responsible for the Content posted on the Service and you use the Service at your own risk. If you violate the letter or spirit of these Terms of Use, or otherwise create risk or possible legal exposure for QuipSphere, we can stop providing all or part of the Service to you.</li>
+
+</ul>
+</p>
+
+<p><b>General Conditions</b></p>
+<p>
+<ul>
+<li>We reserve the right to modify or terminate the Service or your access to the Service for any reason, without notice, at any time, and without liability to you. You can deactivate your QuipSphere account by logging into the Service and completing the form available here: https://QuipSphere.com/accounts/remove/request/. If we terminate your access to the Service or you use the form detailed above to deactivate your account, your photos, comments, likes, friendships, and all other data will no longer be accessible through your account (e.g., users will not be able to navigate to your username and view your photos), but those materials and data may persist and appear within the Service (e.g., if your Content has been reshared by others).</li>
+<li>Upon termination, all licenses and other rights granted to you in these Terms of Use will immediately cease.</li>
+<li>We reserve the right, in our sole discretion, to change these Terms of Use ("Updated Terms") from time to time. Unless we make a change for legal or administrative reasons, we will provide reasonable advance notice before the Updated Terms become effective. You agree that we may notify you of the Updated Terms by posting them on the Service, and that your use of the Service after the effective date of the Updated Terms (or engaging in such other conduct as we may reasonably specify) constitutes your agreement to the Updated Terms. Therefore, you should review these Terms of Use and any Updated Terms before using the Service. The Updated Terms will be effective as of the time of posting, or such later date as may be specified in the Updated Terms, and will apply to your use of the Service from that point forward. These Terms of Use will govern any disputes arising before the effective date of the Updated Terms.</li>
+<li>We reserve the right to refuse access to the Service to anyone for any reason at any time.</li>
+<li>We reserve the right to force forfeiture of any username for any reason.</li>
+<li>We may, but have no obligation to, remove, edit, block, and/or monitor Content or accounts containing Content that we determine in our sole discretion violates these Terms of Use.</li>
+<li>You are solely responsible for your interaction with other users of the Service, whether online or offline. You agree that QuipSphere is not responsible or liable for the conduct of any user. QuipSphere reserves the right, but has no obligation, to monitor or become involved in disputes between you and other users. Exercise common sense and your best judgment when interacting with others, including when you submit or post Content or any personal or other information.</li>
+<li>There may be links from the Service, or from communications you receive from the Service, to third-party web sites or features. There may also be links to third-party web sites or features in images or comments within the Service. The Service also includes third-party content that we do not control, maintain or endorse. Functionality on the Service may also permit interactions between the Service and a third-party web site or feature, including applications that connect the Service or your profile on the Service with a third-party web site or feature. For example, the Service may include a feature that enables you to share Content from the Service or your Content with a third party, which may be publicly posted on that third party's service or application. Using this functionality typically requires you to login to your account on the third-party service and you do so at your own risk. QuipSphere does not control any of these third-party web services or any of their content. You expressly acknowledge and agree that QuipSphere is in no way responsible or liable for any such third-party services or features. YOUR CORRESPONDENCE AND BUSINESS DEALINGS WITH THIRD PARTIES FOUND THROUGH THE SERVICE ARE SOLELY BETWEEN YOU AND THE THIRD PARTY. You may choose, at your sole and absolute discretion and risk, to use applications that connect the Service or your profile on the Service with a third-party service (each, an "Application") and such Application may interact with, connect to or gather and/or pull information from and to your Service profile. By using such Applications, you acknowledge and agree to the following: (i) if you use an Application to share information, you are consenting to information about your profile on the Service being shared; (ii) your use of an Application may cause personally identifying information to be publicly disclosed and/or associated with you, even if QuipSphere has not itself provided such information; and (iii) your use of an Application is at your own option and risk, and you will hold the QuipSphere Parties (defined below) harmless for activity related to the Application.</li>
+<li>You agree that you are responsible for all data charges you incur through use of the Service.</li>
+<li>We prohibit crawling, scraping, caching or otherwise accessing any content on the Service via automated means, including but not limited to, user profiles and photos (except as may be the result of standard search engine protocols or technologies used by a search engine with QuipSphere's express consent).</li>
+</ul>
+</p>
+
+<p><b>Rights</b></p>
+<p>
+    <ul>
+        <li>QuipSphere does not claim ownership of any Content that you post on or through the Service. Instead, you hereby grant to QuipSphere a non-exclusive, fully paid and royalty-free, transferable, sub-licensable, worldwide license to use the Content that you post on or through the Service, subject to the Service's Privacy Policy, available here http://QuipSphere.com/legal/privacy/, including but not limited to sections 3 ("Sharing of Your Information"), 4 ("How We Store Your Information"), and 5 ("Your Choices About Your Information"). You can choose who can view your Content and activities, including your photos, as described in the Privacy Policy.</li>
+        <li>Some of the Service is supported by advertising revenue and may display advertisements and promotions, and you hereby agree that QuipSphere may place such advertising and promotions on the Service or on, about, or in conjunction with your Content. The manner, mode and extent of such advertising and promotions are subject to change without specific notice to you.</li>
+        <li>You acknowledge that we may not always identify paid services, sponsored content, or commercial communications as such.</li>
+        <li>You represent and warrant that: (i) you own the Content posted by you on or through the Service or otherwise have the right to grant the rights and licenses set forth in these Terms of Use; (ii) the posting and use of your Content on or through the Service does not violate, misappropriate or infringe on the rights of any third party, including, without limitation, privacy rights, publicity rights, copyrights, trademark and/or other intellectual property rights; (iii) you agree to pay for all royalties, fees, and any other monies owed by reason of Content you post on or through the Service; and (iv) you have the legal right and capacity to enter into these Terms of Use in your jurisdiction.</li>
+        <li>The Service contains content owned or licensed by QuipSphere ("QuipSphere Content"). QuipSphere Content is protected by copyright, trademark, patent, trade secret and other laws, and, as between you and QuipSphere, QuipSphere owns and retains all rights in the QuipSphere Content and the Service. You will not remove, alter or conceal any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the QuipSphere Content and you will not reproduce, modify, adapt, prepare derivative works based on, perform, display, publish, distribute, transmit, broadcast, sell, license or otherwise exploit the QuipSphere Content.The QuipSphere name and logo are trademarks of QuipSphere, and may not be copied, imitated or used, in whole or in part, without the prior written permission of QuipSphere, except in accordance with our brand guidelines, available here: https://www.QuipSphere-brand.com/. In addition, all page headers, custom graphics, button icons and scripts are service marks, trademarks and/or trade dress of QuipSphere, and may not be copied, imitated or used, in whole or in part, without prior written permission from QuipSphere.</li>
+        <li>Although it is QuipSphere's intention for the Service to be available as much as possible, there will be occasions when the Service may be interrupted, including, without limitation, for scheduled maintenance or upgrades, for emergency repairs, or due to failure of telecommunications links and/or equipment. Also, QuipSphere reserves the right to remove any Content from the Service for any reason, without prior notice. Content removed from the Service may continue to be stored by QuipSphere, including, without limitation, in order to comply with certain legal obligations, but may not be retrievable without a valid court order. Consequently, QuipSphere encourages you to maintain your own backup of your Content. In other words, QuipSphere is not a backup service and you agree that you will not rely on the Service for the purposes of Content backup or storage. QuipSphere will not be liable to you for any modification, suspension, or discontinuation of the Services, or the loss of any Content. You also acknowledge that the Internet may be subject to breaches of security and that the submission of Content or other information may not be secure.</li>
+    </ul>
+</p>
+                
+                </div>
+                
+            </div>
+        </div><!--Border-->   
+ 
+        
+         <div id="footer">
+            <div id="footer_inner">
+                QuipSphere &copy;2016
+                <div style="list-style: none;float:right;color:#777">
+                    <a style="color:#777;text-decoration: none;" href="privacy_policy.html">Privacy</a> | <a style="color:#777;text-decoration: none;" href="terms_of_use.html">Terms</a> | <a style="color:#777;text-decoration: none;" href="#">FAQs</a> | <a style="color:#777;text-decoration: none;" href="mailto:help@quipsphere.com">Support</a>
+                    
+                </div>
+            </div>
+        </div>    
+</body>
+
+</html>
+
+<script>
+    $( document ).ready(function() {
+       /* $(".a").click(function(){
+            $('#op').prop( "checked", false );
+            $(".overlay").remove();
+        });*/
+        
+         /* Simple Timer. The countdown to 20:30 2100.05.09
+            --------------------------------------------------------- */
+            $('#simple_timer').syotimer({
+                year: 2016,
+                month: 5,
+                day: 7,
+                hour: 18,
+                minute: 00,
+            });
+
+        
+        // Handler for .ready() called.
+        var url = $(location).attr('href');
+        var fileName = url.slice(url.lastIndexOf('/') + 1);
+
+        switch (fileName){
+            case '#features':
+              $(this).css("font-weight", "bold");
+              $(this).find('strong, b').css('font-weight', 'normal')
+              break;
+            case '#about':
+              $('#about_menu').css("font-weight","bold");
+              break;
+        }
+        
+        $(function(){
+
+              var $window           = $(window),
+                  win_height_padded = $window.height() * 1.1,
+                  isTouch           = Modernizr.touch;
+
+              if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+              $window.on('scroll', revealOnScroll);
+
+              function revealOnScroll() {
+                var scrolled = $window.scrollTop(),
+                    win_height_padded = $window.height() * 1.1;
+
+                // Showed...
+                $(".revealOnScroll:not(.animated)").each(function () {
+                  var $this     = $(this),
+                      offsetTop = $this.offset().top;
+
+                  if (scrolled + win_height_padded > offsetTop) {
+                    if ($this.data('timeout')) {
+                      window.setTimeout(function(){
+                        $this.addClass('animated ' + $this.data('animation'));
+                      }, parseInt($this.data('timeout'),10));
+                    } else {
+                      $this.addClass('animated ' + $this.data('animation'));
+                    }
+                  }
+                });
+                // Hidden...
+               $(".revealOnScroll.animated").each(function (index) {
+                  var $this     = $(this),
+                      offsetTop = $this.offset().top;
+                  if (scrolled + win_height_padded < offsetTop) {
+                    $(this).removeClass('animated rotateIn fadeInLeft fadeInRight fadeInUp fadeInDown')
+                  }
+                });
+              }
+
+              revealOnScroll();
+        });
+     }); 
+     
+  
+        
+    
+</script>

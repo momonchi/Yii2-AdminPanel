@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<meta property="og:url" content="http://quipsphere.com" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Quipsphere" />  
+<meta property="og:description" content="Welcome to QuipSphere: The coolest voice-based entertainment app that allows you to create topics and exchange messages with everyone." />
+<meta property="og:image" content="http://quipsphere.com/images/quiplogo_fbshare.png" />
+<head>
+    <meta charset="UTF-8">
+    <title>QuipSphere</title>
+    <!--<link rel="stylesheet" type="text/css" href="/bootstrap-3.3.2-dist/css/bootstrap.css">-->
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="jquery.syotimer.js"></script>
+    
+    
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="/quip/images/favicon.png"/>
+</head>
+
+<style>
+  ul,li{
+       font-size: 16px;
+      font-family: Avenir-Light;
+      color: #5d5d5d;
+      margin-top: 10px;
+      margin: 10px 0px;
+      padding: 0px 0px 0px 20px;
+  }
+    .marginbtm{
+        margin-bottom: 20px;
+    }
+    .features_img {
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-delay: 0.5s;
+    }
+    .download_app{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0.5s; 
+      animation-duration: 2s;
+      animation-delay: 0.5s; 
+      
+    }
+    #phone1_holder{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0.5s; 
+      animation-duration: 2s;
+      animation-delay: 0.5s; 
+    }
+    #welcome_to_quipsphere{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 1s; 
+      animation-duration: 2s;
+      animation-delay: 1s; 
+    }
+    #iframe{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 1.5s; 
+       animation-duration: 2s;
+       animation-delay: 1.5s; 
+    }
+    #app_gplay_holder_login{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 2s;
+      animation-duration: 2s;
+      animation-delay: 2s; 
+    }
+    #download_app2{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 2s; 
+      animation-duration: 2s;
+      animation-delay: 2s; 
+    }
+    
+    
+    /* Customization Style of SyoTimer */
+       
+        .timer .table-cell{
+            display: inline-block;
+            margin: 0 5px;
+
+            width: 50px;
+            /*background: url(./images/timer.png) no-repeat 0 0;*/
+        }
+        .timer .table-cell .tab-val{
+            font-size: 35px;
+            color: #80a3ca;
+
+            height: 81px;
+            line-height: 81px;
+
+            margin: 0 0 5px;
+        }
+        .timer .table-cell .tab-metr{
+            font-family: Arial;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        #simple_timer.timer .table-cell.day, 
+        #periodic_timer_days.timer .table-cell.hour{
+            width: 50px;
+            /*background-image: url(./images/timer.png);*/
+        }
+</style>
+
+
+
+<body>
+    <header>
+        <div id="header_container" >
+            <div id="header_holder">
+                <div id="logo">
+                    <div id="logo_holder">
+                        <a href="http://quipsphere.com"><img src="/images/quips_logo.png" width="100%"></a>
+                    </div>
+                </div>
+                <div id="menu">
+                   <!-- <ul>
+                        <li><a  id="home_menu" href="#features">HOME</a></li>
+                        <li><a  id="about_menu" href="#features">ABOUT US</a></li>
+                        <li><a  id="support_menu" href="#testimonials">SUPPORT</a></li>
+                        <li><a  id="blog_menu" href="#download_app">BLOG</a></li>
+                        <li><a  id="contact_menu" href="#contact">CONTACT</a></li>
+                    </ul>      -->
+                </div>
+        <!--side menu-->
+                <input type="checkbox" id="op" style="display:none;"></input>
+                <div class="lower">
+                  <!--<label for="op"><img src="/images/side-menu-icon.png" width="50px"></label>-->
+                </div>
+                <div class="overlay overlay-hugeinc">
+                    <label for="op"></label>
+                    <nav>
+                        <ul id="ul_menu">
+                          <!--  <li><a class="a" id="home_menu" href="#features">HOME</a></li>
+                            <li><a class="a" id="about_menu" href="#features">ABOUT US</a></li>
+                            <li><a class="a" id="support_menu" href="#testimonials">SUPPORT</a></li>
+                            <li><a class="a" id="blog_menu" href="#download_app">BLOG</a></li>
+                            <li><a class="a" id="contact_menu" href="#contact">CONTACT</a></li> -->
+                            
+                            <!--<li><a class="a" id="home_menu" href="#features"><label for="op">HOME</label></a></li>
+                            <li><a class="a" id="about_menu" href="#features"><label for="op">ABOUT US</label></a></li>
+                            <li><a class="a" id="support_menu" href="#testimonials"><label for="op">SUPPORT</label></a></li>
+                            <li><a class="a" id="blog_menu" href="#download_app"><label for="op">BLOG</label></a></li>
+                            <li><a class="a" id="contact_menu" href="#contact"><label for="op">CONTACS</label></a></li>-->   
+                            
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+    </header>     
+    
+    <!--Login-->
+        
+        <div id="login_container" style="font-family:Avenir, Arial;min-height:500px">
+            <div id="login" style="width:70%;margin:0 auto;">
+                <div >
+                <h2>Support</h2>
+                
+                <p>We would be glad hearing from you.</p>
+                <p>Please send your feedback and/or suggestions to <a style="color:royalblue;text-decoration: none;" href="mailto:info@quipsphere.com">info@quipsphere.com</a></p>
+
+
+                
+                </div>
+                
+            </div>
+        </div><!--Border-->   
+ 
+        
+         <div id="footer">
+            <div id="footer_inner">
+                QuipSphere &copy;2016
+                <div style="list-style: none;float:right;color:#777">
+                    <a style="color:#777;text-decoration: none;" href="privacy_policy.html">Privacy</a> | <a style="color:#777;text-decoration: none;" href="terms_of_use.html">Terms</a> | <a style="color:#777;text-decoration: none;" href="#">FAQs</a> | <a style="color:#777;text-decoration: none;" href="mailto:help@quipsphere.com">Support</a>
+                    
+                </div>
+            </div>
+        </div>    
+</body>
+
+</html>
+
+<script>
+    $( document ).ready(function() {
+       /* $(".a").click(function(){
+            $('#op').prop( "checked", false );
+            $(".overlay").remove();
+        });*/
+        
+         /* Simple Timer. The countdown to 20:30 2100.05.09
+            --------------------------------------------------------- */
+            $('#simple_timer').syotimer({
+                year: 2016,
+                month: 5,
+                day: 7,
+                hour: 18,
+                minute: 00,
+            });
+
+        
+        // Handler for .ready() called.
+        var url = $(location).attr('href');
+        var fileName = url.slice(url.lastIndexOf('/') + 1);
+
+        switch (fileName){
+            case '#features':
+              $(this).css("font-weight", "bold");
+              $(this).find('strong, b').css('font-weight', 'normal')
+              break;
+            case '#about':
+              $('#about_menu').css("font-weight","bold");
+              break;
+        }
+        
+        $(function(){
+
+              var $window           = $(window),
+                  win_height_padded = $window.height() * 1.1,
+                  isTouch           = Modernizr.touch;
+
+              if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+              $window.on('scroll', revealOnScroll);
+
+              function revealOnScroll() {
+                var scrolled = $window.scrollTop(),
+                    win_height_padded = $window.height() * 1.1;
+
+                // Showed...
+                $(".revealOnScroll:not(.animated)").each(function () {
+                  var $this     = $(this),
+                      offsetTop = $this.offset().top;
+
+                  if (scrolled + win_height_padded > offsetTop) {
+                    if ($this.data('timeout')) {
+                      window.setTimeout(function(){
+                        $this.addClass('animated ' + $this.data('animation'));
+                      }, parseInt($this.data('timeout'),10));
+                    } else {
+                      $this.addClass('animated ' + $this.data('animation'));
+                    }
+                  }
+                });
+                // Hidden...
+               $(".revealOnScroll.animated").each(function (index) {
+                  var $this     = $(this),
+                      offsetTop = $this.offset().top;
+                  if (scrolled + win_height_padded < offsetTop) {
+                    $(this).removeClass('animated rotateIn fadeInLeft fadeInRight fadeInUp fadeInDown')
+                  }
+                });
+              }
+
+              revealOnScroll();
+        });
+     }); 
+     
+  
+        
+    
+</script>
